@@ -1,0 +1,42 @@
+.ChatBox {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.Message {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.UserMessage {
+  color: white;
+}
+
+.BotMessage {
+  color: wheat;
+}
+
+.InputField {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.SendButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.SendButton:hover {
+  background-color: dimgray;
+}

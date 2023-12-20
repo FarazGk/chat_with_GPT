@@ -1,0 +1,74 @@
+/* ./components/Header.css*/
+.header {
+  display: flex;
+  /*width: 80vw; !* Set the width to 100% of the viewport width *!*/
+  margin-left: auto;
+  margin-right: auto;
+  left: 2em;
+  right: 0;
+  top: 1em;
+  max-height: 100px;
+  justify-content: space-between; /* Align children to the sides */
+  position: fixed; /* Make the header fixed at the top */
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+/* Scrolled position */
+.header-scrolled {
+  /*top: 5%;*/
+}
+
+.logo {
+  height: 6em;
+  width: auto; /* Maintain the aspect ratio */
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  box-sizing: content-box; /* Exclude padding and border in width and height */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo-text:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Removes underline from link */
+  color: inherit; /* Keeps the text color consistent */
+}
+
+.logo {
+  height: 40px; /* Or whatever size you want */
+  /* Other styles for the logo if needed */
+}
+
+.logo-text {
+  font-size: 25px; /* Or whatever size you prefer */
+  color: white;
+  font-weight: 500;
+}

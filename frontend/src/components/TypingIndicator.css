@@ -1,0 +1,40 @@
+/* TypingIndicator.css */
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 5%;
+}
+
+.typing-indicator span {
+  background-color: wheat;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+  animation: typing 1s infinite ease;
+}
+
+.typing-indicator span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
